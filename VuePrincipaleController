@@ -1,15 +1,10 @@
 package motus.vue;
 
 
-import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-
-import java.io.IOException;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import motus.vue.MainApp;
 
 public class VuePrincipaleController {
@@ -25,7 +20,9 @@ public class VuePrincipaleController {
 	}
 	
 	@FXML
-	private Button bJouer;
+	private void bJouer(){
+		mainApp.afficheVue("VuePartie.fxml");
+	}
 	
 	
 	
