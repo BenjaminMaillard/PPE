@@ -73,7 +73,7 @@ public class MainApp extends Application {
            // Charge la vue laVue.
            FXMLLoader loader = new FXMLLoader();
            loader.setLocation(MainApp.class.getResource(laVue));
-           AnchorPane vuePoids = (AnchorPane) loader.load();
+           AnchorPane VuePrincipale = (AnchorPane) loader.load();
 
         } catch (IOException e) {
            e.printStackTrace();
