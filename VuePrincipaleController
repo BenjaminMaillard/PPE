@@ -1,22 +1,33 @@
 package motus.vue;
 
+
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import motus.vue.MainApp;
 
 public class VuePrincipaleController {
 	
 	@FXML
-	private Button bQuitter;
+	private void exitButtonOnAction(ActionEvent event){
+	        ((Stage)(((Button)event.getSource()).getScene().getWindow())).close();      
+	}
+	
+	@FXML
+	private void bParametre(){
+		mainApp.afficheVue("Parametres.fxml");
+	}
 	
 	@FXML
 	private Button bJouer;
 	
-	@FXML
-	private Button bParametre;
 	
-	public VuePrincipaleController() {
-    }
 	
 	private MainApp mainApp;
 
@@ -30,4 +41,5 @@ public class VuePrincipaleController {
         this.mainApp = mainApp;
 
     }
+	
 }
