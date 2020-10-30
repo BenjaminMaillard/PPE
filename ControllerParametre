@@ -1,0 +1,18 @@
+package motus.vue;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+
+public class ParametreController {
+	
+	@FXML
+	private Label lParametre;
+	
+	private MainApp mainApp;
+	
+	public void setMainApp(MainApp mainApp) {
+        this.mainApp = mainApp;
+
+    }
+}
