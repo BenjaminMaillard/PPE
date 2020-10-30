@@ -1,0 +1,27 @@
+package motus.vue;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.layout.GridPane;
+
+public class VuePartieController {
+	
+	@FXML
+	private Label lJoueur1;
+	
+	@FXML
+	private Label lJoueur2;
+	
+	@FXML
+	private GridPane gJoueur2;
+	
+	@FXML
+	private GridPane gJoueur1;
+	
+	private MainApp mainApp;
+	
+	public void setMainApp(MainApp mainApp) {
+        this.mainApp = mainApp;
+
+    }
+}
